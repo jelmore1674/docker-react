@@ -3,13 +3,6 @@ on:
     push:
         branches:
             - master
-        paths:
-            - .
-    pull_request:
-        branches:
-            - master
-        paths:
-            - .
 jobs:
     build:
         runs-on: ubuntu-latest
