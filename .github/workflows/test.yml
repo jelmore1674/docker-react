@@ -17,4 +17,4 @@ jobs:
             - name: Install docker image
               run: docker build -t jelmore1674/test-ci:latest -f Dockerfile.dev .
             - name: Run tests
-              run: docker run jelmore1674/test-ci npm run test
+              run: docker run jelmore1674/test-ci npm run test -- --coverage
